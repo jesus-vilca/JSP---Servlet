@@ -34,7 +34,7 @@ public class Servlet extends HttpServlet {
 		String yourName = request.getParameter("yourName");
         Person person =  new Person();
         person.setName(yourName);
-        person.setAge(17);
+        person.setAge(18);
 
         request.setAttribute("person", person);
         RequestDispatcher dispatcher=

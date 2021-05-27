@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,6 +9,6 @@
 </head>
 <body>
 	<jsp:useBean id="person" type="pe.unsa.epcc.Person" scope="request" />
-    Bienvenido, <jsp:getProperty name="person" property="name"/>
+    Bienvenido, <c:out value="${person.name}" default="desconocida"/>
 </body>
 </html>
